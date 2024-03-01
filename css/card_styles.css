@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:url("../img/background.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+.card {
+  display: grid;
+  grid-template-columns: 460px;
+  grid-template-areas: "image" "text";
+  border-radius: 15px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+  margin:30px;
+}
+
+
+.card-image {
+  grid-area: image;
+  height:220px;
+  background: url("https://mercure.rocks/static/main.png");
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-size: cover;
+}
+
+.card-text {
+  grid-area: text;
+  height:max-content;
+  margin: 25px;
+}
+.card-text .title {
+  font-size:2rem;
+  color: rgb(255, 7, 110);
+
+}
+.card-text p {
+  color: grey;
+  font-size:15px;
+  font-weight: 300;
+}
+.card-text h2 {
+  margin-top:0px;
+  font-size:20px;
+}
+.data-container{
+  margin-top:16px;
+  height:280px;
+  overflow-y: scroll;
+}
